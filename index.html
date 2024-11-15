@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Hunt</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        body {
+            background-color: #CBEDED;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #a8eaea;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .tab-content {
+            padding-top: 30px;
+        }
+
+        .book-cover {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .book-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .book-item img {
+            max-width: 100%; /* Makes the image fill the column */
+            height: 300px; /* Increased height for larger image */
+            object-fit: cover; /* Scales the image without distortion */
+            border-radius: 5px;
+        }
+
+        .btn-custom {
+            background-color: #83e6e6;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .btn-custom:hover {
+            background-color: #a8eaea;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            padding-top: 0px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="">
+            <img src="static/images/Amy_Hunt2.png" alt="Amy Hunt Logo" style="height: 150px;"> <!-- Adjust height as needed -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="home-tab" href="#" onclick="showTab('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="books-tab" href="#" onclick="showTab('books')">Available Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="free-books-tab" href="#" onclick="showTab('free-books')">Free Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="author-tab" href="#" onclick="showTab('author')">Author</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Tabs -->
+    <div class="tab-content container">
+
+        <!-- Home Section -->
+        <div class="tab-pane" id="home">
+            <div class="main-content text-center">
+                <img src="static/images/81IEFL3RpbL._SL1500_.jpg" alt="Twins For My Hot Firefighter" class="book-cover"style="max-width: 300px;">
+                <h1 class="mt-4">Twins For My Hot Firefighter</h1>
+                <h3>Small Town Billionaire Protector Romance</h3>
+                <a href="https://www.amazon.com/Twins-Hot-firefighter-Billionaire-Protector-ebook/dp/B0DGRQ8QWQ?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR" target="_NEW" class="btn btn-custom">View on Amazon</a>
+                <a href="https://www.amazon.com/s?k=Amy+hunt&crid=3QOCBMAVW6O4U&sprefix=amy+hunt%2Caps%2C237&ref=nb_sb_noss_1" target="_NEW" class="btn btn-custom">More Information</a>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="books">
+            <h2 class="text-center mt-5">Available Books</h2>
+            <br>
+            <div class="container">
+
+                <div class="row justify-content-center book-item">
+                    <div class="col-md-3">
+                        <img src="static/images/81IEFL3RpbL._SL1500_.jpg" alt="Twins For My Hot Firefighter" class="book-image">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Twins For My Hot Firefighter</h3>
+                        <p>Small Town Billionaire Protector Romance</p>
+                        <a href="https://www.amazon.com/Twins-Hot-firefighter-Billionaire-Protector-ebook/dp/B0DGRQ8QWQ?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR" target="_NEW"  class="btn btn-custom">Quick look</a>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center book-item">
+                    <div class="col-md-3">
+                        <img src="static/images/81N5gvZ1vsL._SL1500_.jpg" alt="Surprise Baby For My Silver Fox" class="book-image">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Surprise Baby For My Silver Fox</h3>
+                        <p>Age Gap Bad Boy Billionaire Boss Romance</p>
+                        <a href="https://www.amazon.com/Surprise-Baby-Silver-Fox-Billionaire-ebook/dp/B0DJW3P6BR?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR" target="_NEW"  class="btn btn-custom">Quick look</a>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-center book-item">
+                    <div class="col-md-3">
+                        <img src="static/images/81NfWdRVlzL._SL1500_.jpg" alt="Baby Girl For My Bad Boy Billionaire" class="book-image">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Baby Girl For My Bad Boy Billionaire</h3>
+                        <p>Enemies To Lovers Grumpy Boss Romance</p>
+                        <a href="https://www.amazon.com/Baby-Girl-Bad-Boy-Billionaire-ebook/dp/B0DHQYT58L?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR" target="_NEW"  class="btn btn-custom">Quick look</a>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-center book-item">
+                    <div class="col-md-3">
+                        <img src="static/images/81WHcsA60wL._SL1500_.jpg" alt="Fake Marriage With My Grumpy Billionaire" class="book-image">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Fake Marriage With My Grumpy Billionaire</h3>
+                        <p>Enemies To Lovers Small Town Romance</p>
+                        <a href="https://www.amazon.com/Fake-Marriage-My-Grumpy-Billionaire-ebook/dp/B0DDHZ4QR1?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR" target="_NEW"  class="btn btn-custom">Quick look</a>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-center book-item">
+                    <div class="col-md-3">
+                        <img src="static/images/71UCFBizb+L._SL1500_.jpg" alt="Secret Baby With My Grumpy Billionaire" class="book-image">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Secret Baby With My Grumpy Billionaire</h3>
+                        <p>Enemies to Lovers Small Town Romance</p>
+                        <a href="https://www.amazon.com/Secret-Baby-My-Grumpy-Billionaire-ebook/dp/B0D7TNXWTB?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR" target="_NEW"  class="btn btn-custom">Quick look</a>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-center book-item">
+                    <div class="col-md-3">
+                        <img src="static/images/71wLfH1oCzL._SL1500_.jpg" alt="Fake Engagement With My Grumpy Billionaire" class="book-image">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Fake Engagement With My Grumpy Billionaire</h3>
+                        <p>Enemies to Lovers Small Town Romance</p>
+                        <a href="https://www.amazon.com/Fake-Engagement-Grumpy-Billionaire-Enemies-ebook/dp/B0CW19LQCC?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR" target="_NEW"  class="btn btn-custom">Quick look</a>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+        
+        
+        <!-- Free Books Section -->
+        <div class="tab-pane" id="free-books">
+            <!-- <h2 class="text-center mt-5">Free Books</h2> -->
+            <div class="free-book-item row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <img src="static/images/81OHTtavgdL._SL1500_.jpg" alt="Grumpy Billionaire Ex" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8">
+                    <h3>When my grumpy billionaire Ex rolls into Harmony Creek, my cozy little artsy world gets a whole lot messier.</h3>
+                    <p>
+                        Ex-Navy SEAL Ethan bought our family winery in town and is back for much more. <br><br>
+                        This arrogant jerk probably doesn't know the difference between a Merlot and a Mimosa.<br><br>
+                        Working with him is torture; he thinks he can claim everything he finds, but he's wrong.<br><br>
+                        But his unexpected kiss caught me entirely off guard, reigniting a rush of familiar sensations. 
+                        I never anticipated longing for him—the warmth of his touch, the tender press of his lips—<br><br>
+                        Should I fight to save my family's legacy or surrender to the allure of a happily ever after?
+                    </p>
+                    <a href="#" class="btn btn-custom">Download FREE on Bookfunnel</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="author">
+            <h2 class="text-center mt-5">About the Author</h2>
+            <div class="author-section row justify-content-center align-items-center mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="static/images/IMG_1426.png" alt="Author Image" class="img-fluid rounded-circle" style="max-width: 350px;">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Welcome!
+                        My name is Amy Hunt, and I live in sunny Florida with my husband. We live in a cozy cottage near the beach and often take walks there. I've always been captivated by romantic books and movies. 
+                        My writing is driven by the joy of crafting love stories and thrilling plots and the privilege of sharing them with you. 
+                        My billionaire, small-town, alfa male, sassy female, and fake relationship stories are inspiring and compelling, and they promise a happily ever after… 
+                        If you're a fan of contemporary romance, follow me on this page and be among the first to learn about my upcoming releases. 
+                        The anticipation is half the fun!</p>
+                    <p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div>Amy Hunt 3661 N Campbell Ave. PO Box 596, Tucson 85719</div>
+        <div class="mt-3">
+            <a style="color: black;" href="https://dl.bookfunnel.com/9ims272bxq">Join My Newsletter</a> |
+            <a style="color: black;" href="https://preview.mailerlite.io/preview/913537/sites/136635242862610098/TiNxWX">Join ARC Team</a> |
+            <a style="color: black;" href="#">Terms</a> |
+            <a style="color: black;" href="#">Privacy Policy</a> |
+            <a style="color: black;" href="#">Contact</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showTab(tab) {
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active', 'show'));
+            document.getElementById(tab + '-tab').classList.add('active');
+            document.getElementById(tab).classList.add('active', 'show');
+        }
+        showTab('home');
+    </script>
+</body>
+
+</html>

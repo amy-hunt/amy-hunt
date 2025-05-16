@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the captivating romance novels of Amy Hunt, including small-town billionaires, alpha males, and thrilling love stories. Find your next read today!">
-    <meta name="keywords" content="Amy Hunt, romance novels, billionaire romance, small-town romance, alpha male romance, contemporary romance, free romance books">
+    <meta name="description" content="Discover Amy Hunt's captivating romance novels featuring small-town billionaires, alpha males, and thrilling love stories. Explore best-selling contemporary romance books and free reads today!">
+    <meta name="keywords" content="Amy Hunt, romance novels, billionaire romance, small-town romance, alpha male romance, contemporary romance, free romance books, enemies to lovers, sports romance">
     <meta name="author" content="Amy Hunt">
-    <title>Amy Hunt - Romance Author</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="robots" content="index, follow">
+    <title>Amy Hunt - Best-Selling Romance Author</title>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.amyhuntauthor.com/">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Amy Hunt - Best-Selling Romance Author">
+    <meta property="og:description" content="Explore Amy Hunt's romance novels, including billionaire romances, small-town love stories, and alpha male adventures. Find your next read today!">
+    <meta property="og:image" content="https://www.amyhuntauthor.com/static/images/Amy_Hunt2.png">
+    <meta property="og:url" content="https://www.amyhuntauthor.com/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amy Hunt - Best-Selling Romance Author">
+    <meta name="twitter:description" content="Discover Amy Hunt's captivating romance novels and free books. Perfect for fans of billionaire and small-town romance!">
+    <meta name="twitter:image" content="https://www.amyhuntauthor.com/static/images/Amy_Hunt2.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/static/images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/static/images/Amy_Hunt2.png" as="image">
     <style>
         body {
             background-color: #CBEDED;
             color: #333;
             font-family: Arial, sans-serif;
         }
-
         .navbar {
             background-color: #a8eaea;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            /* Adds a subtle shadow */
         }
-
         .navbar-brand {
             font-weight: bold;
         }
-
         .tab-content {
             padding-top: 30px;
         }
-
-        .book-cover {
+        .book-cover, .book-image {
             max-width: 100%;
             border-radius: 5px;
+            loading: lazy;
         }
-
         .book-item {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
             justify-content: center;
         }
-
         .book-item img {
             max-width: 100%;
-            /* Makes the image fill the column */
             height: 300px;
-            /* Increased height for larger image */
             object-fit: cover;
-            /* Scales the image without distortion */
             border-radius: 5px;
         }
-
         .btn-custom {
             background-color: #83e6e6;
             color: black;
@@ -62,11 +70,9 @@
             text-align: center;
             width: fit-content;
         }
-
         .btn-custom:hover {
             background-color: #a8eaea;
         }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -74,25 +80,75 @@
             font-size: 14px;
             color: #666;
         }
+        /* Optimize image responsiveness */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
+    <!-- Structured Data for Organization and Books -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Amy Hunt Author",
+        "url": "https://www.amyhuntauthor.com",
+        "logo": "https://www.amyhuntauthor.com/static/images/Amy_Hunt2.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@amyhuntauthor.com",
+            "contactType": "Customer Service"
+        },
+        "sameAs": [
+            "https://www.amazon.com/stores/AMY-HUNT/author/B0D3BJNQQS",
+            "https://dl.bookfunnel.com/9ims272bxq"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Book",
+            "name": "Crossing The Line With My Off-Limits Billionaire",
+            "author": {
+                "@type": "Person",
+                "name": "Amy Hunt"
+            },
+            "genre": "Romance",
+            "url": "https://www.amazon.com/Crossing-Line-My-Off-Limits-Billionaire-ebook/dp/B0F7CKX4R1/",
+            "image": "https://www.amyhuntauthor.com/static/images/81T8Evsfa+L._SL1500_.jpg",
+            "description": "A grumpy enemies to lovers sports romance novel by Amy Hunt."
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Book",
+            "name": "Playing With My Off-Limits Billionaire",
+            "author": {
+                "@type": "Person",
+                "name": "Amy Hunt"
+            },
+            "genre": "Romance",
+            "url": "https://www.amazon.com/Playing-My-Off-Limits-Billionaire-Enemies-ebook/dp/B0F127PXSM/",
+            "image": "https://www.amyhuntauthor.com/static/images/81OuSPENbFL._SL1500_.jpg",
+            "description": "An enemies to lovers grumpy playboy sports romance by Amy Hunt."
+        }
+    ]
+    </script>
 </head>
-
 <body>
-
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="">
-            <img src="static/images/Amy_Hunt2.png" alt="Amy Hunt Logo" style="height: 150px;">
-            <!-- Adjust height as needed -->
+        <a class="navbar-brand" href="/" aria-label="Amy Hunt Author Home">
+            <img src="static/images/Amy_Hunt2.png" alt="Amy Hunt Author Logo" style="height: 150px;" loading="lazy">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" id="home-tab" href="#" onclick="showTab('home')">Home</a>
+                    <a class="nav-link" id="home-tab" href="#" onclick="showTab('home')" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="books-tab" href="#" onclick="showTab('books')">Available Books</a>
@@ -101,7 +157,7 @@
                     <a class="nav-link" id="free-books-tab" href="#" onclick="showTab('free-books')">Free Books</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="author-tab" href="#" onclick="showTab('author')">Author</a>
+                    <a class="nav-link" id="author-tab" href="#" onclick="showTab('author')">About the Author</a>
                 </li>
             </ul>
         </div>
@@ -109,239 +165,180 @@
 
     <!-- Tabs -->
     <div class="tab-content container">
-
         <!-- Home Section -->
         <div class="tab-pane" id="home" style="padding-top: 50px;">
             <div class="main-content text-center">
-                <img src="static/images/81T8Evsfa+L._SL1500_.jpg" alt="Crossing The Line With My Off-Limits Billionaire" class="book-cover"
-                    style="max-width: 400px;">
+                <img src="static/images/81T8Evsfa+L._SL1500_.jpg" alt="Crossing The Line With My Off-Limits Billionaire Book Cover" class="book-cover" style="max-width: 400px;" loading="lazy">
                 <h1 class="mt-4">Crossing The Line With My Off-Limits Billionaire</h1>
-                <h3>Grumpy Enemies To Lovers Sports Romance</h3>
-                <a href="https://www.amazon.com/Crossing-Line-My-Off-Limits-Billionaire-ebook/dp/B0F7CKX4R1/?_encoding=UTF8&pd_rd_w=GNwTi&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=134-5541361-1453331&pd_rd_wg=qprUZ&pd_rd_r=af6a6da8-6fa6-4e49-97c5-1b0ac07b58b4&ref_=aufs_ap_sc_dsk"
-                    target="_NEW" class="btn btn-custom">View on Amazon</a>
-                <a href="https://www.amazon.com/stores/AMY-HUNT/author/B0D3BJNQQS?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true"
-                    target="_NEW" class="btn btn-custom">More Information</a>
+                <h2>Grumpy Enemies To Lovers Sports Romance</h2>
+                <p>Immerse yourself in Amy Hunt's thrilling billionaire romance novel, perfect for fans of enemies-to-lovers and sports romance stories.</p>
+                <a href="https://www.amazon.com/Crossing-Line-My-Off-Limits-Billionaire-ebook/dp/B0F7CKX4R1/" target="_blank" class="btn btn-custom" rel="noopener">View on Amazon</a>
+                <a href="https://www.amazon.com/stores/AMY-HUNT/author/B0D3BJNQQS" target="_blank" class="btn btn-custom" rel="noopener">More Information</a>
             </div>
         </div>
 
+        <!-- Available Books Section -->
         <div class="tab-pane" id="books">
-            <h2 class="text-center mt-5">Available Books</h2>
-            <br>
-
+            <h1 class="text-center mt-5">Available Romance Novels by Amy Hunt</h1>
+            <p class="text-center">Explore Amy Hunt's collection of contemporary romance novels, featuring billionaire heroes, small-town settings, and passionate love stories.</p>
             <div class="container">
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81T8Evsfa+L._SL1500_.jpg" alt=""
-                            class="book-image">
+                        <img src="static/images/81T8Evsfa+L._SL1500_.jpg" alt="Crossing The Line With My Off-Limits Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Crossing The Line With My Off-Limits Billionaire</h3>
+                        <h2>Crossing The Line With My Off-Limits Billionaire</h2>
                         <p>Grumpy Enemies To Lovers Sports Romance</p>
-                        <a href="https://www.amazon.com/Crossing-Line-My-Off-Limits-Billionaire-ebook/dp/B0F7CKX4R1/?_encoding=UTF8&pd_rd_w=GNwTi&content-id=amzn1.sym.0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_p=0fb2cce1-1ca4-439a-844b-8ad0b1fb77f7&pf_rd_r=134-5541361-1453331&pd_rd_wg=qprUZ&pd_rd_r=af6a6da8-6fa6-4e49-97c5-1b0ac07b58b4&ref_=aufs_ap_sc_dsk"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Crossing-Line-My-Off-Limits-Billionaire-ebook/dp/B0F7CKX4R1/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-                
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81OuSPENbFL._SL1500_.jpg" alt=""
-                            class="book-image">
+                        <img src="static/images/81OuSPENbFL._SL1500_.jpg" alt="Playing With My Off-Limits Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Playing With My Off-Limits Billionaire</h3>
+                        <h2>Playing With My Off-Limits Billionaire</h2>
                         <p>Enemies To Lovers Grumpy Playboy Sports Romance</p>
-                        <a href="https://www.amazon.com/Playing-My-Off-Limits-Billionaire-Enemies-ebook/dp/B0F127PXSM/?_encoding=UTF8&pd_rd_w=M1S22&content-id=amzn1.sym.bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_p=bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_r=134-5541361-1453331&pd_rd_wg=anY48&pd_rd_r=65a0f85e-e992-4cc8-b892-d0292aec9377&ref_=aufs_ap_sc_dsk"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Playing-My-Off-Limits-Billionaire-Enemies-ebook/dp/B0F127PXSM/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81gtGzOonhL._SL1500_.jpg" alt="Pucking My Playboy Off-Limits Billionaire"
-                            class="book-image">
+                        <img src="static/images/81gtGzOonhL._SL1500_.jpg" alt="Pucking My Playboy Off-Limits Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Pucking My Playboy Off-Limits Billionaire</h3>
+                        <h2>Pucking My Playboy Off-Limits Billionaire</h2>
                         <p>Grumpy, Brother's Best Friend, Enemies To Lovers, Sports Romance</p>
-                        <a href="https://www.amazon.com/Pucking-My-Playboy-Off-Limits-Billionaire-ebook/dp/B0DX3G3YHH/?_encoding=UTF8&pd_rd_w=kePWC&content-id=amzn1.sym.bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_p=bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_r=134-5541361-1453331&pd_rd_wg=ryz6l&pd_rd_r=af75939e-84d4-43b9-965a-97994ba2f722&ref_=aufs_ap_sc_dsk"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Pucking-My-Playboy-Off-Limits-Billionaire-ebook/dp/B0DX3G3YHH/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81OMzSmOt3L._SL1500_.jpg" alt="Fake Dating My Damaged Billionaire"
-                            class="book-image">
+                        <img src="static/images/81OMzSmOt3L._SL1500_.jpg" alt="Fake Dating My Damaged Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Fake Dating My Damaged Billionaire</h3>
+                        <h2>Fake Dating My Damaged Billionaire</h2>
                         <p>Off-Limits Grumpy Brother's Best Friend Sports Romance</p>
-                        <a href="https://www.amazon.com/Fake-Dating-Damaged-Billionaire-Off-Limits-ebook/dp/B0DTGNVHQW/?_encoding=UTF8&pd_rd_w=AmRD6&content-id=amzn1.sym.bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_p=bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_r=134-5541361-1453331&pd_rd_wg=jCYcR&pd_rd_r=89efc70a-da40-4f15-8692-83cc7d3390f6&ref_=aufs_ap_sc_dsk"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Fake-Dating-Damaged-Billionaire-Off-Limits-ebook/dp/B0DTGNVHQW/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81pjOERn53L._SL1500_.jpg" alt="Secret Baby For My Broken Billionaire"
-                            class="book-image">
+                        <img src="static/images/81pjOERn53L._SL1500_.jpg" alt="Secret Baby For My Broken Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Secret Baby For My Broken Billionaire</h3>
+                        <h2>Secret Baby For My Broken Billionaire</h2>
                         <p>Off-Limits Age-Gap Grumpy Race Car Driver</p>
-                        <a href="https://www.amazon.com/Secret-Baby-Broken-Billionaire-Off-Limits-ebook/dp/B0DPXXCC37/?_encoding=UTF8&pd_rd_w=1u4Gz&content-id=amzn1.sym.bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_p=bc3ba8d1-5076-4ab7-9ba8-a5c6211e002d&pf_rd_r=134-5541361-1453331&pd_rd_wg=3XKXl&pd_rd_r=772d0603-0b3f-43c3-9579-ed9466c0f3d0&ref_=aufs_ap_sc_dsk"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Secret-Baby-Broken-Billionaire-Off-Limits-ebook/dp/B0DPXXCC37/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81IEFL3RpbL._SL1500_.jpg" alt="Twins For My Hot Firefighter"
-                            class="book-image">
+                        <img src="static/images/81IEFL3RpbL._SL1500_.jpg" alt="Twins For My Hot Firefighter Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Twins For My Hot Firefighter</h3>
+                        <h2>Twins For My Hot Firefighter</h2>
                         <p>Small Town Billionaire Protector Romance</p>
-                        <a href="https://www.amazon.com/Twins-Hot-firefighter-Billionaire-Protector-ebook/dp/B0DGRQ8QWQ?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Twins-Hot-firefighter-Billionaire-Protector-ebook/dp/B0DGRQ8QWQ/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81N5gvZ1vsL._SL1500_.jpg" alt="Surprise Baby For My Silver Fox"
-                            class="book-image">
+                        <img src="static/images/81N5gvZ1vsL._SL1500_.jpg" alt="Surprise Baby For My Silver Fox Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Surprise Baby For My Silver Fox</h3>
+                        <h2>Surprise Baby For My Silver Fox</h2>
                         <p>Age Gap Bad Boy Billionaire Boss Romance</p>
-                        <a href="https://www.amazon.com/Surprise-Baby-Silver-Fox-Billionaire-ebook/dp/B0DJW3P6BR?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Surprise-Baby-Silver-Fox-Billionaire-ebook/dp/B0DJW3P6BR/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81NfWdRVlzL._SL1500_.jpg" alt="Baby Girl For My Bad Boy Billionaire"
-                            class="book-image">
+                        <img src="static/images/81NfWdRVlzL._SL1500_.jpg" alt="Baby Girl For My Bad Boy Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Baby Girl For My Bad Boy Billionaire</h3>
+                        <h2>Baby Girl For My Bad Boy Billionaire</h2>
                         <p>Enemies To Lovers Grumpy Boss Romance</p>
-                        <a href="https://www.amazon.com/Baby-Girl-Bad-Boy-Billionaire-ebook/dp/B0DHQYT58L?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Baby-Girl-Bad-Boy-Billionaire-ebook/dp/B0DHQYT58L/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/81WHcsA60wL._SL1500_.jpg" alt="Fake Marriage With My Grumpy Billionaire"
-                            class="book-image">
+                        <img src="static/images/81WHcsA60wL._SL1500_.jpg" alt="Fake Marriage With My Grumpy Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Fake Marriage With My Grumpy Billionaire</h3>
+                        <h2>Fake Marriage With My Grumpy Billionaire</h2>
                         <p>Enemies To Lovers Small Town Romance</p>
-                        <a href="https://www.amazon.com/Fake-Marriage-My-Grumpy-Billionaire-ebook/dp/B0DDHZ4QR1?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Fake-Marriage-My-Grumpy-Billionaire-ebook/dp/B0DDHZ4QR1/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/71UCFBizb+L._SL1500_.jpg" alt="Secret Baby With My Grumpy Billionaire"
-                            class="book-image">
+                        <img src="static/images/71UCFBizb+L._SL1500_.jpg" alt="Secret Baby With My Grumpy Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Secret Baby With My Grumpy Billionaire</h3>
+                        <h2>Secret Baby With My Grumpy Billionaire</h2>
                         <p>Enemies to Lovers Small Town Romance</p>
-                        <a href="https://www.amazon.com/Secret-Baby-My-Grumpy-Billionaire-ebook/dp/B0D7TNXWTB?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Secret-Baby-My-Grumpy-Billionaire-ebook/dp/B0D7TNXWTB/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
                 <div class="row justify-content-center book-item">
                     <div class="col-md-3">
-                        <img src="static/images/71wLfH1oCzL._SL1500_.jpg"
-                            alt="Fake Engagement With My Grumpy Billionaire" class="book-image">
+                        <img src="static/images/71wLfH1oCzL._SL1500_.jpg" alt="Fake Engagement With My Grumpy Billionaire Book Cover" class="book-image" loading="lazy">
                     </div>
                     <div class="col-md-7">
-                        <h3>Fake Engagement With My Grumpy Billionaire</h3>
+                        <h2>Fake Engagement With My Grumpy Billionaire</h2>
                         <p>Enemies to Lovers Small Town Romance</p>
-                        <a href="https://www.amazon.com/Fake-Engagement-Grumpy-Billionaire-Enemies-ebook/dp/B0CW19LQCC?dib=eyJ2IjoiMSJ9.qnJFdYRQOQqhoZH0uiwG8Ewu99jpMyAdIQnjfHhKUb7p-b07-ZX7ZOHjridDcpCx3_zRxZkb3AnpQFJwsjYcyCReb8_rS7vW_y55RIhf6BE.y-WshdBBxja-ssgwB_aH8gv4seCh36NodrNpboI7o84&dib_tag=AUTHOR"
-                            target="_NEW" class="btn btn-custom">Quick look</a>
+                        <a href="https://www.amazon.com/Fake-Engagement-Grumpy-Billionaire-Enemies-ebook/dp/B0CW19LQCC/" target="_blank" class="btn btn-custom" rel="noopener">Quick Look</a>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <!-- Free Books Section -->
         <div class="tab-pane" id="free-books">
-            <!-- <h2 class="text-center mt-5">Free Books</h2> -->
+            <h1 class="text-center mt-5">Free Romance Books by Amy Hunt</h1>
+            <p class="text-center">Download a free romance novel and dive into Amy Hunt's world of billionaire romance and small-town love stories.</p>
             <div class="free-book-item row justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <img src="static/images/81OHTtavgdL._SL1500_.jpg" alt="Grumpy Billionaire Ex"
-                        class="img-fluid rounded">
+                    <img src="static/images/81OHTtavgdL._SL1500_.jpg" alt="Grumpy Billionaire Ex Free Book Cover" class="img-fluid rounded" loading="lazy">
                 </div>
                 <div class="col-md-8">
-                    <h3>When my grumpy billionaire Ex rolls into Harmony Creek, my cozy little artsy world gets a whole
-                        lot messier.</h3>
-                    <p>
-                        Ex-Navy SEAL Ethan bought our family winery in town and is back for much more. <br><br>
-                        This arrogant jerk probably doesn't know the difference between a Merlot and a Mimosa.<br><br>
-                        Working with him is torture; he thinks he can claim everything he finds, but he's wrong.<br><br>
-                        But his unexpected kiss caught me entirely off guard, reigniting a rush of familiar sensations.
-                        I never anticipated longing for him—the warmth of his touch, the tender press of his
-                        lips—<br><br>
-                        Should I fight to save my family's legacy or surrender to the allure of a happily ever after?
-                    </p>
-                    <a href="https://dl.bookfunnel.com/9ims272bxq" class="btn btn-custom">Download FREE on Bookfunnel</a>
+                    <h2>Grumpy Billionaire Ex</h2>
+                    <p>When my grumpy billionaire Ex rolls into Harmony Creek, my cozy little artsy world gets a whole lot messier. Ex-Navy SEAL Ethan bought our family winery in town and is back for much more. This arrogant jerk probably doesn't know the difference between a Merlot and a Mimosa. Working with him is torture; he thinks he can claim everything he finds, but he's wrong. But his unexpected kiss caught me entirely off guard, reigniting a rush of familiar sensations. Should I fight to save my family's legacy or surrender to the allure of a happily ever after?</p>
+                    <a href="https://dl.bookfunnel.com/9ims272bxq" class="btn btn-custom" rel="noopener">Download FREE on Bookfunnel</a>
                 </div>
             </div>
         </div>
 
+        <!-- Author Section -->
         <div class="tab-pane" id="author">
-            <h2 class="text-center mt-5">About the Author</h2>
+            <h1 class="text-center mt-5">About Amy Hunt, Romance Author</h1>
             <div class="author-section row justify-content-center align-items-center mt-4">
                 <div class="col-md-4 text-center">
-                    <img src="static/images/IMG_1426.png" alt="Author Image" class="img-fluid rounded-circle"
-                        style="max-width: 350px;">
+                    <img src="static/images/IMG_1426.png" alt="Amy Hunt Author Portrait" class="img-fluid rounded-circle" style="max-width: 350px;" loading="lazy">
                 </div>
                 <div class="col-md-8">
-                    <p>
-                        Welcome!
-                        My name is Amy Hunt, and I live in sunny Florida with my husband. We live in a cozy cottage near
-                        the beach and often take walks there. I've always been captivated by romantic books and movies.
-                        My writing is driven by the joy of crafting love stories and thrilling plots and the privilege
-                        of sharing them with you.
-                        My billionaire, small-town, alfa male, sassy female, and fake relationship stories are inspiring
-                        and compelling, and they promise a happily ever after…
-                        If you're a fan of contemporary romance, follow me on this page and be among the first to learn
-                        about my upcoming releases.
-                        The anticipation is half the fun!</p>
-                    <p>
+                    <p>Welcome! My name is Amy Hunt, a best-selling romance author based in sunny Florida. Living in a cozy cottage near the beach with my husband, I draw inspiration from romantic books and movies. My writing is fueled by the joy of crafting compelling love stories featuring billionaires, small-town settings, alpha males, and sassy heroines. Each novel promises a happily ever after, perfect for fans of contemporary romance. Follow me to stay updated on new releases and exclusive content!</p>
+                    <a href="https://dl.bookfunnel.com/9ims272bxq" class="btn btn-custom" rel="noopener">Join My Newsletter</a>
                 </div>
             </div>
         </div>
 
+        <!-- Privacy Policy Section -->
         <div class="tab-pane" id="privacy-policy">
-            <h2>Privacy Policy for Amy Hunt Author</h2>
+            <h1>Privacy Policy for Amy Hunt Author</h1>
             <p><strong>Effective Date:</strong> April 15th, 2024</p>
-            <p>At Amy Hunt Author (“we,” “us,” or “our”), we are committed to protecting your privacy. This Privacy
-                Policy outlines how we collect, use, and disclose your information when you visit our website,
-                purchase our books, or engage with our services.</p>
-            <h3>1. Information We Collect</h3>
-            <p>We may collect personal information that you provide to us directly, as well as information that is
-                collected automatically when you use our website.</p>
+            <p>At Amy Hunt Author, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and disclose your information when you visit our website, purchase our books, or engage with our services.</p>
+            <h2>1. Information We Collect</h2>
+            <p>We may collect personal information that you provide to us directly, as well as information that is collected automatically when you use our website.</p>
             <p><strong>a. Personal Information:</strong></p>
             <ul>
                 <li>Name</li>
                 <li>Email address</li>
                 <li>Mailing address</li>
                 <li>Payment information (processed through a secure third-party service)</li>
-                <li>Any other information you voluntarily provide when purchasing books or subscribing to our
-                    newsletter.</li>
+                <li>Any other information you voluntarily provide when purchasing books or subscribing to our newsletter.</li>
             </ul>
             <p><strong>b. Automatic Information:</strong></p>
             <ul>
@@ -351,162 +348,120 @@
                 <li>Time and date of your visit</li>
                 <li>Referring website</li>
             </ul>
-            <h3>2. How We Use Your Information</h3>
+            <h2>2. How We Use Your Information</h2>
             <ul>
                 <li>To process and fulfill your orders.</li>
                 <li>To communicate with you about your orders and our services.</li>
-                <li>To send you newsletters, promotional materials, and other information that may be of interest to
-                    you, with your consent.</li>
+                <li>To send you newsletters, promotional materials, and other information that may be of interest to you, with your consent.</li>
                 <li>To improve our website, services, and customer experience.</li>
                 <li>To analyze trends and usage to enhance our offerings.</li>
                 <li>To comply with legal obligations and protect our rights.</li>
             </ul>
-            <h3>3. Sharing Your Information</h3>
+            <h2>3. Sharing Your Information</h2>
             <ul>
-                <li>With our trusted service providers who assist us in operating our website or conducting our
-                    business, so long as those parties agree to keep this information confidential.</li>
-                <li>When required by law or to protect our rights and the safety of our users, or as part of a legal
-                    proceeding.</li>
+                <li>With our trusted service providers who assist us in operating our website or conducting our business, so long as those parties agree to keep this information confidential.</li>
+                <li>When required by law or to protect our rights and the safety of our users, or as part of a legal proceeding.</li>
             </ul>
-            <h3>4. Third-Party Services</h3>
-            <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices 
-                or the content of those websites. We encourage you to read the privacy policies of any third-party websites you visit.</p>
-            <h3>5. Cookies and Tracking Technologies</h3>
-            <p>We use cookies and similar tracking technologies to enhance your browsing experience on our website. 
-                You can choose to accept or decline cookies through your browser settings. Please note that declining cookies 
-                may affect your ability to use certain features of our website.</p>
-            <h3>6. Security of Your Information</h3>
-            <p>We take reasonable measures to protect your personal information from unauthorized access or disclosure. 
-                However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we 
-                cannot guarantee absolute security.</p>
-            <h3>7. Your Rights</h3>
-            <p>You have the right to access, correct, or delete your personal information. You may also withdraw your consent 
-                to our processing of your information at any time by contacting us. To exercise your rights, please reach out 
-                to us at the contact information provided below.</p>
-            <h3>8. Changes to This Privacy Policy</h3>
-            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated 
-                effective date. We encourage you to review our Privacy Policy periodically for any changes.</p>
-            <h3>9. Contact Us</h3>
+            <h2>4. Third-Party Services</h2>
+            <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or the content of those websites. We encourage you to read the privacy policies of any third-party websites you visit.</p>
+            <h2>5. Cookies and Tracking Technologies</h2>
+            <p>We use cookies and similar tracking technologies to enhance your browsing experience on our website. You can choose to accept or decline cookies through your browser settings. Please note that declining cookies may affect your ability to use certain features of our website.</p>
+            <h2>6. Security of Your Information</h2>
+            <p>We take reasonable measures to protect your personal information from unauthorized access or disclosure. However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+            <h2>7. Your Rights</h2>
+            <p>You have the right to access, correct, or delete your personal information. You may also withdraw your consent to our processing of your information at any time by contacting us. To exercise your rights, please reach out to us at the contact information provided below.</p>
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. We encourage you to review our Privacy Policy periodically for any changes.</p>
+            <h2>9. Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us at:</p>
             <p>
                 Amy Hunt<br>
                 3661 N Campbell Ave #596<br>
                 Tucson, AZ 85719<br>
-                Email: info@amyhuntauthor.com
+                Email: <a href="mailto:info@amyhuntauthor.com">info@amyhuntauthor.com</a>
             </p>
-            <p>Thank you for trusting Amy Hunt Author with your information. We appreciate your support in the world of 
-                contemporary romance!</p>
+            <p>Thank you for trusting Amy Hunt Author with your information. We appreciate your support in the world of contemporary romance!</p>
         </div>
-        <!-- Privacy Policy Section -->
 
+        <!-- Terms of Service Section -->
         <div class="tab-pane" id="terms-service">
-            <!-- Terms and Conditions Section -->
-            <h2>Terms and Conditions for Amy Hunt Author</h2>
+            <h1>Terms and Conditions for Amy Hunt Author</h1>
             <p><strong>Effective Date:</strong> April 15th, 2024</p>
-            <p>Welcome to the website of Amy Hunt Author (“we,” “us,” or “our”). These Terms and Conditions govern
-                your use of our website and the services provided by us, including the purchase of our books. By accessing 
-                or using our site, you agree to comply with and be bound by these Terms and Conditions. If you do not agree 
-                to these terms, please do not use our website.</p>
-            <h3>1. Definitions</h3>
+            <p>Welcome to the website of Amy Hunt Author. These Terms and Conditions govern your use of our website and the services provided by us, including the purchase of our books. By accessing or using our site, you agree to comply with and be bound by these Terms and Conditions.</p>
+            <h2>1. Definitions</h2>
             <ul>
-                <li><strong>“Content”</strong>: All materials, including text, images, audio, and video, available on
-                    our website.</li>
+                <li><strong>“Content”</strong>: All materials, including text, images, audio, and video, available on our website.</li>
                 <li><strong>“User”</strong>: Any individual accessing or using our website or services.</li>
             </ul>
-            <h3>2. Intellectual Property</h3>
-            <p>All content available on this site is the property of Amy Hunt Author or its licensors and is protected
-                by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, 
-                or create derivative works from any content without our explicit written permission.</p>
-            <h3>3. Use of the Website</h3>
-            <p>You are permitted to use our website for lawful purposes and in a manner that does not infringe the rights of, 
-                or restrict or inhibit the use of, our website by any third party. Prohibited activities include, but are not 
-                limited to:</p>
-            <ul>
-                <li>Disruption of the website’s functionality or attempting to gain unauthorized access to any part of our website.</li>
-                <li>Transmitting any data or material that is unlawful, harmful, or misleading.</li>
-            </ul>
-            <h3>4. Purchase Policies</h3>
-            <p>When you make a purchase through our website, you agree to provide accurate and complete payment information. 
-                All transactions are processed through secure third-party payment processors, and we do not store your payment 
-                information.</p>
-            <h3>5. Pricing and Availability</h3>
-            <p>Prices for our books and other products are subject to change without notice. Despite our best efforts, items 
-                may be mispriced, and we cannot guarantee the availability of any specific item. We reserve the right to refuse 
-                or cancel any orders placed based on incorrect pricing or availability.</p>
-            <h3>6. Returns and Refunds</h3>
-            <p>Due to the nature of our products, we typically do not accept returns or refunds. However, if you experience 
-                issues with your order, please contact us at the email address provided below, and we will do our best to address 
-                the situation.</p>
-            <h3>7. User Accounts</h3>
-            <p>You may choose to create an account on our website. By creating an account, you agree to provide accurate, current, 
-                and complete information and to keep your account details updated. You are responsible for maintaining the 
-                confidentiality of your account password and for all activities that occur under your account.</p>
-            <h3>8. Limitation of Liability</h3>
-            <p>To the maximum extent permitted by law, Amy Hunt Author shall not be liable for any direct, indirect, incidental, 
-                consequential, or punitive damages arising from your use of or inability to use our website or services.</p>
-            <h3>9. Indemnification</h3>
-            <p>You agree to indemnify and hold harmless Amy Hunt Author, its affiliates, and its employees from any claim, liability, 
-                loss, or expense (including reasonable attorney's fees) arising out of your violation of these Terms and Conditions 
-                or your use of our website.</p>
-            <h3>10. Governing Law</h3>
-            <p>These Terms and Conditions are governed by and construed in accordance with the laws of Arizona. Any disputes arising 
-                from these terms will be resolved in the courts of Arizona.</p>
-            <h3>11. Changes to Terms and Conditions</h3>
-            <p>We reserve the right to update or modify these Terms and Conditions at any time. Any changes will be posted on this 
-                page with an updated effective date. Your continued use of the website following any changes signifies your acceptance 
-                of the new terms.</p>
-            <h3>12. Contact Us</h3>
+            <h2>2. Intellectual Property</h2>
+            <p>All content available on this site is the property of Amy Hunt Author or its licensors and is protected by copyright, trademark, and other intellectual property laws.</p>
+            <h2>3. Use of the Website</h2>
+            <p>You are permitted to use our website for lawful purposes and in a manner that does not infringe the rights of, or restrict or inhibit the use of, our website by any third party.</p>
+            <h2>4. Purchase Policies</h2>
+            <p>When you make a purchase through our website, you agree to provide accurate and complete payment information. All transactions are processed through secure third-party payment processors.</p>
+            <h2>5. Pricing and Availability</h2>
+            <p>Prices for our books and other products are subject to change without notice. We reserve the right to refuse or cancel any orders placed based on incorrect pricing or availability.</p>
+            <h2>6. Returns and Refunds</h2>
+            <p>Due to the nature of our products, we typically do not accept returns or refunds. However, if you experience issues with your order, please contact us.</p>
+            <h2>7. User Accounts</h2>
+            <p>You may choose to create an account on our website. You are responsible for maintaining the confidentiality of your account password and for all activities that occur under your account.</p>
+            <h2>8. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, Amy Hunt Author shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of our website or services.</p>
+            <h2>9. Indemnification</h2>
+            <p>You agree to indemnify and hold harmless Amy Hunt Author from any claim, liability, loss, or expense arising out of your violation of these Terms and Conditions.</p>
+            <h2>10. Governing Law</h2>
+            <p>These Terms and Conditions are governed by and construed in accordance with the laws of Arizona.</p>
+            <h2>11. Changes to Terms and Conditions</h2>
+            <p>We reserve the right to update or modify these Terms and Conditions at any time. Your continued use of the website following any changes signifies your acceptance of the new terms.</p>
+            <h2>12. Contact Us</h2>
             <p>If you have any questions or concerns regarding these Terms and Conditions, please contact us at:</p>
             <p>
                 Amy Hunt<br>
                 3661 N Campbell Ave #596<br>
                 Tucson, AZ 85719<br>
-                Email: info@amyhuntauthor.com
+                Email: <a href="mailto:info@amyhuntauthor.com">info@amyhuntauthor.com</a>
             </p>
             <p>Thank you for choosing Amy Hunt Author. We appreciate your support and hope you enjoy our books!</p>
         </div>
-        
     </div>
 
+    <!-- Footer -->
     <footer class="mt-5">
-        <div>Amy Hunt 3661 N Campbell Ave. PO Box 596, Tucson AZ, 85719</div>
+        <div>Amy Hunt Author | 3661 N Campbell Ave. PO Box 596, Tucson AZ, 85719</div>
         <div class="mt-3">
-            <a style="color: black;" href="https://dl.bookfunnel.com/9ims272bxq">Join My Newsletter</a> |
-            <a style="color: black;"
-                href="https://preview.mailerlite.io/preview/913537/sites/136635242862610098/TiNxWX">Join ARC Team</a> |
+            <a style="color: black;" href="https://dl.bookfunnel.com/9ims272bxq" rel="noopener">Join My Newsletter</a> |
+            <a style="color: black;" href="https://preview.mailerlite.io/preview/913537/sites/136635242862610098/TiNxWX" rel="noopener">Join ARC Team</a> |
             <a style="color: black;" href="#" id="privacy-policy-tab" onclick="showTab('privacy-policy')">Privacy Policy</a> |
             <a style="color: black;" href="#" id="terms-service-tab" onclick="showTab('terms-service')">Terms of Service</a> |
             <a style="color: black;" href="mailto:info@amyhuntauthor.com">Contact</a>
         </div>
+        <div class="mt-3">
+            <a href="/sitemap.xml" rel="sitemap">Sitemap</a> | 
+            <a href="/robots.txt">Robots</a>
+        </div>
+        <p>&copy; 2025 Amy Hunt Author. All rights reserved.</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Scripts with async/defer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" defer></script>
     <script>
         function showTab(tab) {
-            // Hide all tab panes and remove the 'active' and 'show' classes
             document.querySelectorAll('.tab-pane').forEach(pane => {
                 pane.classList.remove('active', 'show');
             });
-    
-            // Remove 'active' class from all navigation links
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
             });
-    
-            // Add 'active' and 'show' classes to the selected tab pane
             document.getElementById(tab).classList.add('active', 'show');
-    
-            // Add 'active' class to the corresponding nav link (if exists)
             const tabLink = document.getElementById(tab + '-tab');
             if (tabLink) {
                 tabLink.classList.add('active');
             }
         }
-    
-        // Default to showing the 'home' tab on page load
+        // Default to home tab
         showTab('home');
     </script>
 </body>
-
 </html>
